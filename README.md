@@ -1,5 +1,5 @@
 # eyeAware
-Based on the Online Classroom Attention Tracker (OCAT) project, we devised a web-app that continously track student attention and enables real time monitoring and warning of non-attentive students
+We devised a web-app that continously track student attention and enables real time monitoring and warning of non-attentive students
 
 ## Step 1: Create a model to detect facial pointers
 The very first step is to create a model to detect facial pointers such as nose, eyes, and mouth. To do this I just used [Openface](https://github.com/TadasBaltrusaitis/OpenFace) as a basis to detect automatic facial behavior and analysis. Openface is used because of its extensive training data and real-time performance capability and the application does not need any specialist hardware.
