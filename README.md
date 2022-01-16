@@ -2,7 +2,7 @@
 We devised a web-app that continously track student attention and enables real time monitoring and warning of non-attentive students
 
 ## Step 1: Create a model to detect facial pointers
-The very first step is to create a model to detect facial pointers such as nose, eyes, and mouth. To do this I just used [FaceScrub](http://vintage.winklerbros.net/facescrub.html) and [dlib face landmarks](https://github.com/davisking/dlib-models) as a basis to detect automatic facial behavior and analysis. Openface is used because of its extensive training data and real-time performance capability and the application does not need any specialist hardware.
+The very first step is to create a model to detect facial pointers such as nose, eyes, and mouth. To do this I just used [FaceScrub](http://vintage.winklerbros.net/facescrub.html) from the Vision & Interaction Group NUS Singapore and [dlib face landmarks](https://github.com/davisking/dlib-models) as a basis to detect automatic facial behavior and analysis. Openface is used because of its extensive training data and real-time performance capability and the application does not need any specialist hardware.
 
 ## Step 2: Cleaning the data
 Not all camera output qualities are built equally, if the program has lower than a 20% confidence on the detection of facial features it will create a static image of the zoom feed and use [waifu2x](https://github.com/nagadomi/waifu2x) to enable image upscaling. This will be done using a dedicated cloud instance that is able to support CUDA-based SRCNN operations
